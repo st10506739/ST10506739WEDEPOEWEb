@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us and Find Our Hubs | Her Foundation</title>
+  <meta name="description" content="Contact Her Foundation by email, Instagram or TikTok, send a message through our form and find our programme hubs on the map.">
+  <meta name="keywords" content="contact Her Foundation, South Africa NPO contact, partnership enquiry, programme hubs map, Johannesburg Durban Cape Town">
+  <meta name="author" content="Phiwokuhle Thobile Zikalala">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Contact Us and Find Our Hubs | Her Foundation">
+  <meta property="og:description" content="Contact Her Foundation by email, Instagram or TikTok, send a message through our form and find our programme hubs on the map.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="event-alert" role="region" aria-label="Upcoming event" data-alert>
+    <div class="container">
+      <p><strong>Coming soon: Her Foundation Sip &amp; Paint.</strong> Date and location to be confirmed. <a href="index.html#upcoming-event">Find out more</a></p>
+      <button type="button" class="alert-close" aria-label="Close this notice">&times;</button>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Her Foundation, home page">
+        <img src="images/logo.png" alt="HER. logo: a gold crown above the word HER with gold roots below" width="300" height="300">
+        <span class="brand-name">Her Foundation</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Programmes</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="gradient-text">Contact us</h1>
+        <p>Questions, partnership ideas or feedback? Send us a message.</p>
+      </div>
+    </section>
+
+    <section class="section section--stone" aria-labelledby="contact-title">
+      <div class="container split">
+        <div class="stack">
+          <h2 id="contact-title" class="gradient-text">Get in touch</h2>
+          <ul class="contact-list">
+            <li><strong>Email</strong><a href="mailto:herfoundationsa@yahoo.com">herfoundationsa@yahoo.com</a></li>
+            <li><strong>Instagram</strong><a href="https://www.instagram.com/her_foundation/" target="_blank" rel="noopener noreferrer">@her_foundation</a></li>
+            <li><strong>TikTok</strong><a href="https://www.tiktok.com/@her_foundation01" target="_blank" rel="noopener noreferrer">@her_foundation01</a></li>
+          </ul>
+          <p>Want to volunteer or sponsor? The <a href="enquiry.html">enquiry form</a> gives you an estimate straight away.</p>
+        </div>
+
+        <div class="form-card">
+          <form id="contact-form" action="contact.html" method="get" novalidate>
+            <div class="field"><label for="ct-name">Full name</label><input type="text" id="ct-name" name="fullName" required minlength="2" maxlength="60" autocomplete="name" aria-describedby="ct-name-error"><p class="field-error" id="ct-name-error"></p></div>
+            <div class="field"><label for="ct-email">Email address</label><input type="email" id="ct-email" name="email" required autocomplete="email" aria-describedby="ct-email-error"><p class="field-error" id="ct-email-error"></p></div>
+            <div class="field"><label for="ct-phone">Phone number <span class="hint">Optional</span></label><input type="tel" id="ct-phone" name="phone" pattern="(\+27|0)[0-9]{9}" autocomplete="tel" aria-describedby="ct-phone-error"><p class="field-error" id="ct-phone-error"></p></div>
+            <div class="field"><label for="ct-type">Type of message</label><select id="ct-type" name="messageType" required aria-describedby="ct-type-error"><option value="">Choose one</option><option value="General question">General question</option><option value="Partnership">Partnership</option><option value="Media">Media</option><option value="Feedback">Feedback</option></select><p class="field-error" id="ct-type-error"></p></div>
+            <div class="field"><label for="ct-subject">Subject</label><input type="text" id="ct-subject" name="subject" required minlength="3" maxlength="80" aria-describedby="ct-subject-error"><p class="field-error" id="ct-subject-error"></p></div>
+            <div class="field">
+              <label for="ct-message">Message <span class="hint">20 to 500 characters</span></label>
+              <textarea id="ct-message" name="message" required minlength="20" maxlength="500" aria-describedby="ct-message-error message-count"></textarea>
+              <p class="char-count" id="message-count">0 / 500 characters</p>
+              <p class="field-error" id="ct-message-error"></p>
+            </div>
+            <button class="btn btn--dark" type="submit">Prepare my email</button>
+          </form>
+
+          <div id="email-output" class="form-feedback is-hidden" aria-live="polite">
+            <h3>Your email is ready</h3>
+            <p><strong>To:</strong> <span id="email-to"></span></p>
+            <p><strong>Subject:</strong> <span id="email-subject"></span></p>
+            <p class="email-preview" id="email-body"></p>
+            <a class="btn btn--dark" id="send-email" href="#">Send email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark on-dark" aria-labelledby="map-title">
+      <div class="container">
+        <h2 id="map-title" class="gradient-text">Where we work</h2>
+        <p>Select a city to zoom in, or click a marker on the map.</p>
+        <div id="location-buttons" class="location-buttons"></div>
+        <div id="map" role="region" aria-label="Map of Her Foundation locations"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Her Foundation</h2>
+          <p>Honoured. Empowered. Rooted. Preparing young South African women for financial independence through employment and entrepreneurship.</p>
+        </div>
+        <div>
+          <h2>Explore</h2>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html">Programmes</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="enquiry.html">Volunteer or sponsor</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Get in touch</h2>
+          <ul>
+            <li><a href="mailto:herfoundationsa@yahoo.com">herfoundationsa@yahoo.com</a></li>
+            <li><a href="https://www.instagram.com/her_foundation/" target="_blank" rel="noopener noreferrer">Instagram: @her_foundation</a></li>
+            <li><a href="https://www.tiktok.com/@her_foundation01" target="_blank" rel="noopener noreferrer">TikTok: @her_foundation01</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; <span data-year>2026</span> Her Foundation. Website built for the WEDE5020 Portfolio of Evidence by Phiwokuhle Thobile Zikalala.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="Back to top">&uarr;</button>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/forms.js"></script>
+</body>
+</html>

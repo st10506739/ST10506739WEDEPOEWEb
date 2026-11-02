@@ -1,0 +1,14 @@
+{
+  "_note": "Illustrative sponsorship amounts for the PoE. Replace with the foundation's confirmed figures.",
+  "programmes": {
+    "employment": { "label": "Employment pathway", "perPerson": 2500 },
+    "business":   { "label": "Entrepreneurship pathway", "perPerson": 3500 },
+    "full":       { "label": "Employment and Entrepreneurship pathways", "perPerson": 5500 }
+  },
+  "volunteerInterests": {
+    "mentoring": "mentoring a young woman",
+    "workshops": "co-facilitating workshops",
+    "events": "supporting events and networking evenings",
+    "admin": "admin and communications"
+  }
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Programmes | Employment and entrepreneurship | Her Foundation</title>
+  <meta name="description" content="Explore Her Foundation programmes: career readiness, CV and interview coaching, business planning, financial literacy, mentorship and networking for young women.">
+  <meta name="keywords" content="women programmes South Africa, career readiness training, CV and interview preparation, business planning, financial literacy, mentorship, entrepreneurship training">
+  <meta name="author" content="Phiwokuhle Thobile Zikalala">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Programmes | Employment and entrepreneurship | Her Foundation">
+  <meta property="og:description" content="Explore Her Foundation programmes: career readiness, CV and interview coaching, business planning, financial literacy, mentorship and networking for young women.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="event-alert" role="region" aria-label="Upcoming event" data-alert>
+    <div class="container">
+      <p><strong>Coming soon: Her Foundation Sip &amp; Paint.</strong> Date and location to be confirmed. <a href="index.html#upcoming-event">Find out more</a></p>
+      <button type="button" class="alert-close" aria-label="Close this notice">&times;</button>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Her Foundation, home page">
+        <img src="images/logo.png" alt="HER. logo: a gold crown above the word HER with gold roots below" width="300" height="300">
+        <span class="brand-name">Her Foundation</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" aria-current="page">Programmes</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="gradient-text">Our programmes</h1>
+        <p>Two pathways, one goal: a young woman earning an income of her own.</p>
+      </div>
+    </section>
+
+    <section class="section section--stone" aria-labelledby="pathways-title">
+      <div class="container">
+        <h2 id="pathways-title" class="gradient-text">Choose a pathway</h2>
+        <div class="tab-list" role="tablist" aria-label="Programme pathways">
+          <button type="button" role="tab" id="tab-employment" aria-selected="true" aria-controls="panel-employment">Employment</button>
+          <button type="button" role="tab" id="tab-business" aria-selected="false" aria-controls="panel-business" tabindex="-1">Entrepreneurship</button>
+        </div>
+        <div class="tab-panel" role="tabpanel" id="panel-employment" aria-labelledby="tab-employment">
+          <div class="split">
+            <div class="stack">
+              <p class="lede">We prepare young women to enter the workforce with the practical skills, professional knowledge and workplace readiness today&rsquo;s employers look for.</p>
+              <p>This pathway is for anyone preparing for a first job, returning to work or changing direction.</p>
+            </div>
+            <ul class="check-list">
+              <li>Career readiness and employability training</li>
+              <li>CV development and interview preparation</li>
+              <li>Workplace communication and professional etiquette</li>
+              <li>Digital and future-ready skills</li>
+              <li>Career mentorship and networking opportunities</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab-panel" role="tabpanel" id="panel-business" aria-labelledby="tab-business" hidden>
+          <div class="split">
+            <div class="stack">
+              <p class="lede">We prepare aspiring entrepreneurs to build sustainable businesses that contribute to economic growth and job creation.</p>
+              <p>This pathway is for young women with a business idea, or a young business that needs structure and support.</p>
+            </div>
+            <ul class="check-list">
+              <li>Entrepreneurial mindset development</li>
+              <li>Business planning and enterprise development</li>
+              <li>Financial literacy and business management</li>
+              <li>Business mentorship and coaching</li>
+              <li>Innovation, networking and market access</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="finder-title">
+      <div class="container">
+        <h2 id="finder-title" class="gradient-text">Find a programme</h2>
+        <div class="finder-controls">
+          <div class="field">
+            <label for="programme-search">Search programmes <span class="hint">Try &ldquo;mentorship&rdquo; or &ldquo;CV&rdquo;</span></label>
+            <input type="text" id="programme-search" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="programme-filter">Pathway</label>
+            <select id="programme-filter">
+              <option value="all">All pathways</option>
+              <option value="employment">Employment</option>
+              <option value="business">Entrepreneurship</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="programme-sort">Sort by</label>
+            <select id="programme-sort">
+              <option value="az">Name, A to Z</option>
+              <option value="za">Name, Z to A</option>
+              <option value="pathway">Pathway</option>
+            </select>
+          </div>
+        </div>
+        <p class="result-count" id="result-count" aria-live="polite"></p>
+        <ul id="programme-list"></ul>
+        <noscript><p class="empty-state">Turn on JavaScript to search the programme list. All ten programmes are described in the pathways above.</p></noscript>
+      </div>
+    </section>
+
+    <section class="section section--dark on-dark" aria-labelledby="partner-title">
+      <div class="container split">
+        <h2 id="partner-title" class="gradient-text">Partner with us</h2>
+        <div class="stack">
+          <p class="lede">Creating lasting change takes collaboration.</p>
+          <p>We build partnerships with government, businesses, educational institutions, development agencies and community organisations that share our vision. Together we strengthen the pathways to employment, support entrepreneurship and promote innovation.</p>
+          <p><a class="btn" href="contact.html">Talk to us about partnering</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Her Foundation</h2>
+          <p>Honoured. Empowered. Rooted. Preparing young South African women for financial independence through employment and entrepreneurship.</p>
+        </div>
+        <div>
+          <h2>Explore</h2>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html">Programmes</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="enquiry.html">Volunteer or sponsor</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Get in touch</h2>
+          <ul>
+            <li><a href="mailto:herfoundationsa@yahoo.com">herfoundationsa@yahoo.com</a></li>
+            <li><a href="https://www.instagram.com/her_foundation/" target="_blank" rel="noopener noreferrer">Instagram: @her_foundation</a></li>
+            <li><a href="https://www.tiktok.com/@her_foundation01" target="_blank" rel="noopener noreferrer">TikTok: @her_foundation01</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; <span data-year>2026</span> Her Foundation. Website built for the WEDE5020 Portfolio of Evidence by Phiwokuhle Thobile Zikalala.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="Back to top">&uarr;</button>
+  <script src="js/main.js"></script>
+  <script src="js/services.js"></script>
+</body>
+</html>
